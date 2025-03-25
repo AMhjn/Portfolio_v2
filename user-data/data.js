@@ -1,8 +1,7 @@
 export const bio = [
-  "Hello, I'm Abhir Mahajan!",
   "<strong>Full Stack Software Engineer</strong> with experience in building scalable, high-performance applications that solve real-world problems.",
   "",
-  "<strong>Actively Looking for 2025 Full-time Software Engineering Roles</strong>.",
+  "<strong>Actively seeking full-time Software Engineering roles for 2025.</strong>",
 ];
 
 export const skills = [
@@ -46,6 +45,28 @@ export const experience = [
       "Mobile App Testing",
     ],
     icon: "truck",
+  }
+  
+];
+
+export const blogItems = [
+  {
+    link: "https://github.com/AMhjn/Music_Streaming_Backend",
+    title: "Melodify - Music Streaming Application",
+    content: "Built a scalable Music Streaming Application that enables seamless playback, offline downloads, and user-uploaded songs.",
+    categories: ["Android", "Kotlin", "Java", "Spring Boot", "MySQL", "AWS S3", "Kafka", "Redis"],
+  },
+  {
+    link: "https://github.com/AMhjn/ECommerce",
+    title: "E-Commerce Platform",
+    content: "Designed and developed an eCommerce web application enabling seamless product browsing, secure transactions, and order management.",
+    categories: ["Java", "Spring Boot", "MySQL", "Kafka", "Redis"],
+  },
+  {
+    link: "https://github.com/vyyellap/OOD_CoursePlus",
+    title: "Online Course Streaming Platform",
+    content: "Developed an online course streaming platform that provides seamless access to educational content with real-time progress tracking and personalized recommendations.",
+    categories: ["Node.js", "Express.js", "MySQL", "Angular", "Redis"],
   }
   
 ];

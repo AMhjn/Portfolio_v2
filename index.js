@@ -3,7 +3,7 @@ import {
   skills,
   education,
   experience,
-  // trekking,
+  blogItems,
   footer,
 } from "./user-data/data.js";
 
@@ -75,9 +75,12 @@ const { medium, gitConnected, gitRepo } = URLs;
 
 function populateBio(items, id) {
   const bioTag = document.getElementById(id);
+  const p1 = getElement("p", null);
+  p.innerHTML = "Hello, I'm Abhir Mahajan!";
+  bioTag.append(p);
   items.forEach((bioItem) => {
     const p = getElement("p", null);
-    p.innerHTML = "&whitesquare; " + bioItem;
+    p.innerHTML = "&square; " + bioItem;
     bioTag.append(p);
   });
 }
@@ -114,81 +117,81 @@ function populateSkills(items, id) {
 //   });
 // }
 
-// function populateBlogs(items, id) {
-//   const projectdesign = document.getElementById(id);
-//   const count = 3; // Number of blogs to display
+function populateBlogs(items, id) {
+  const projectdesign = document.getElementById(id);
+  const count = items.length; // Number of blogs to display
 
-//   for (let i = 0; i < count; i++) {
-//       // Create a wrapper for the blog card
-//       const blogCard = document.createElement("div");
-//       blogCard.className = "blog-card";
-//       blogCard.style = `
-//           display: flex;
-//           flex-direction: column;
-//           border-radius: 12px;
-//           padding: 16px;
-//           font-size: 14px;
-//           background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
-//           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-//           min-height: 150px;
-//           cursor: pointer;
-//       `;
+  for (let i = 0; i < count; i++) {
+      // Create a wrapper for the blog card
+      const blogCard = document.createElement("div");
+      blogCard.className = "blog-card";
+      blogCard.style = `
+          display: flex;
+          flex-direction: column;
+          border-radius: 12px;
+          padding: 16px;
+          font-size: 14px;
+          background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          min-height: 150px;
+          cursor: pointer;
+      `;
 
-//       // Wrap the card content in an anchor tag
-//       const blogLink = document.createElement("a");
-//       blogLink.href = items[i].link;
-//       blogLink.target = "_blank";
-//       blogLink.style = "text-decoration: none; color: black; display: block;";
+      // Wrap the card content in an anchor tag
+      const blogLink = document.createElement("a");
+      blogLink.href = items[i].link;
+      blogLink.target = "_blank";
+      blogLink.style = "text-decoration: none; color: black; display: block;";
 
-//       blogCard.appendChild(blogLink);
+      blogCard.appendChild(blogLink);
 
-//       // Blog Title
-//       const blogTitle = document.createElement("h4");
-//       blogTitle.className = "blog-heading";
-//       blogTitle.innerHTML = items[i].title;
-//       blogTitle.style = "margin: 0 0 8px; font-size: 18px; font-weight: bold;";
-//       blogLink.appendChild(blogTitle);
+      // Blog Title
+      const blogTitle = document.createElement("h4");
+      blogTitle.className = "blog-heading";
+      blogTitle.innerHTML = items[i].title;
+      blogTitle.style = "margin: 0 0 8px; font-size: 18px; font-weight: bold;";
+      blogLink.appendChild(blogTitle);
 
-//       // Publish Date
-//       const pubDateEle = document.createElement("p");
-//       pubDateEle.className = "publish-date";
-//       pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
-//       pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #555;";
-//       blogLink.appendChild(pubDateEle);
+      // Publish Date
+      // const pubDateEle = document.createElement("p");
+      // pubDateEle.className = "publish-date";
+      // pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
+      // pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #555;";
+      // blogLink.appendChild(pubDateEle);
 
-//       // Blog Description
-//       const blogDescription = document.createElement("p");
-//       blogDescription.className = "blog-description";
-//       const html = items[i].content;
-//       const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-//       blogDescription.innerHTML = doc;
-//       blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
-//       blogLink.appendChild(blogDescription);
+      // Blog Description
+      const blogDescription = document.createElement("p");
+      blogDescription.className = "blog-description";
+      const html = items[i].content;
+      const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
+      blogDescription.innerHTML = doc;
+      blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
+      blogLink.appendChild(blogDescription);
 
-//       // Categories (Tags)
-//       const categoriesDiv = document.createElement("div");
-//       categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
+      // Categories (Tags)
+      const categoriesDiv = document.createElement("div");
+      categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
 
-//       for (const category of items[i].categories) {
-//           const badge = document.createElement("span");
-//           badge.className = "badge";
-//           badge.innerHTML = category;
-//           badge.style = `
-//               font-size: 12px;
-//               padding: 4px 8px;
-//               background-color: #007acc;
-//               color: white;
-//               border-radius: 4px;
-//           `;
-//           categoriesDiv.appendChild(badge);
-//       }
+      for (const category of items[i].categories) {
+          const badge = document.createElement("span");
+          badge.className = "badge";
+          badge.innerHTML = category;
+          badge.style = `
+              font-size: 12px;
+              padding: 4px 8px;
+              background-color: #007acc;
+              color: white;
+              border-radius: 4px;
+          `;
+          categoriesDiv.appendChild(badge);
+      }
 
-//       blogLink.appendChild(categoriesDiv);
+      blogLink.appendChild(categoriesDiv);
 
-//       // Append the blog card to the container
-//       projectdesign.appendChild(blogCard);
-//   }
-// }
+      // Append the blog card to the container
+      projectdesign.appendChild(blogCard);
+  }
+}
 
 // function populateRepo(items, id) {
 //   const projectdesign = document.getElementById(id);
@@ -448,6 +451,7 @@ populateBio(bio, "bio");
 populateSkills(skills, "skills");
 
 // fetchBlogsFromMedium(medium);
+populateBlogs(blogItems, "blogs");
 // fetchReposFromGit(gitRepo);
 // fetchGitConnectedData(gitConnected);
 
