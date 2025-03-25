@@ -76,11 +76,11 @@ const { medium, gitConnected, gitRepo } = URLs;
 function populateBio(items, id) {
   const bioTag = document.getElementById(id);
   const p1 = getElement("p", null);
-  p1.innerHTML = "Hello, I'm Abhir Mahajan!";
+  p1.innerHTML = "Hello, I'm Abhir Mahajan. I'm:";
   bioTag.append(p1);
   items.forEach((bioItem) => {
     const p = getElement("p", null);
-    p.innerHTML = "&square; " + bioItem;
+    p.innerHTML = " &square; " + bioItem;
     bioTag.append(p);
   });
 }
@@ -163,8 +163,7 @@ function populateBlogs(items, id) {
       const blogDescription = document.createElement("p");
       blogDescription.className = "blog-description";
       const html = items[i].content;
-      const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-      blogDescription.innerHTML = doc;
+      blogDescription.innerHTML = html;
       blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
       blogLink.appendChild(blogDescription);
 

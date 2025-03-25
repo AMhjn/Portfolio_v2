@@ -1,6 +1,7 @@
 export const bio = [
-  "<strong>Full Stack Software Engineer</strong> with experience in building scalable, high-performance applications that solve real-world problems.",
-  "",
+  "A <strong>Full Stack Software Engineer</strong> with experience in building scalable, high-performance applications that solve real-world problems.",
+  "An <strong>innovation-driven developer</strong> constantly learning and adapting to create impactful software products.",
+  "A <strong>Collaborative team player</strong> who thrives in fast-paced environments and enjoys tackling complex challenges.",
   "<strong>Actively seeking full-time Software Engineering roles for 2025.</strong>",
 ];
 
@@ -18,12 +19,12 @@ export const experience = [
     duration: "August 2021 - July 2023",
     subtitle: "Software Engineer",
     details: [
-      "Engineered and deployed the 'International Tax Documents' portal using Angular, Java, Spring Boot, and MySQL, automating document submission, approval, and delegation workflows, decreasing manual effort, and achieving 70% client adoption.",
-      "Led a large-scale data migration from 'IRIS' MySQL database to 'IRIS 2.0' database, normalizing 100+ complex schemas, ensuring 100% data integrity, and accomplishing a seamless transition with less than 1% downtime and zero data loss.",
-      "Designed UI and REST APIs for 'IRIS' system, optimizing invoice creation, approval, and feedback workflows using Angular, Node.js, Express.js, and MongoDB, driving a 40% increase in user adoption and reducing manual processing time.",
-      "Mentored 3 interns, improving onboarding efficiency and integration time by 50%, while conducting detailed code reviews, ensuring best coding practices, and improving system reliability.",
-      "Implemented comprehensive logging architecture across Microservices, accelerating issue diagnosis time by 60%, boosting system reliability by 40%, and enhancing customer satisfaction through faster issue resolution.",
-      "Earned prestigious 'Debutant' and 'Instapat' awards for problem-solving and innovative mindset that boosted customer engagement and increased IRIS project efficiency by 40%, demonstrating ability to drive project success",
+      "Engineered and deployed the 'International Tax Documents' portal using Angular, Java, Spring Boot, and MySQL, automating document submission, approval, and delegation workflows, decreasing manual effort, and achieving <b>70%</b> client adoption.",
+      "Led a large-scale data migration from 'IRIS' MySQL database to 'IRIS 2.0' database, normalizing <b>100+ complex schemas</b>, ensuring 100% data integrity, and accomplishing a seamless transition with less than 1% downtime and zero data loss.",
+      "Designed UI and REST APIs for 'IRIS' system, optimizing invoice creation, approval, and feedback workflows using Angular, Node.js, Express.js, and MongoDB, driving a <b>40%</b> increase in user adoption and reducing manual processing time.",
+      "<b>Mentored 3 interns</b>, improving onboarding efficiency and integration time by 50%, while conducting detailed code reviews, ensuring best coding practices, and improving system reliability.",
+      "Implemented comprehensive logging architecture across Microservices, accelerating issue diagnosis time by <b>60%</b>, boosting system reliability by 40%, and enhancing customer satisfaction through faster issue resolution.",
+      "Earned prestigious <b>'Debutant'</b> and <b>'Instapat'</b> awards for problem-solving and innovative mindset that boosted customer engagement and increased IRIS project efficiency by 40%, demonstrating ability to drive project success",
     ],
     tags: ["Java", "Spring Boot", "MySQL", "Node.js", " Express.js", "MongoDB", "Angular", "REST APIs", "Microservices"],
     icon: "truck ",
@@ -33,8 +34,8 @@ export const experience = [
     duration: "February 2021 - July 2021",
     subtitle: "Software Engineer Intern",
     details: [
-      "Enhanced Paytm’s mobile app stability by identifying and resolving critical performance issues, resulting in a 25% reduction in post-release defects and a smoother user experience.",
-      "Automated and optimized testing processes using Java, Selenium, and Appium, executing 1,000+ test cases across Android and iOS in an Agile environment, diminishing bug detection time by 15% and strengthening overall app quality.",
+      "Enhanced Paytm’s mobile app stability by identifying and resolving critical performance issues, resulting in a <b>25%</b> reduction in post-release defects and a smoother user experience.",
+      "Automated and optimized testing processes using Java, Selenium, and Appium, executing <b>1,000+</b> test cases across Android and iOS in an Agile environment, diminishing bug detection time by <b>15%</b> and strengthening overall app quality.",
     ],
     tags: [
       "Java",
@@ -89,7 +90,7 @@ export const education = [
     },
     {
     title: "B.Tech. in Computer Science and Engineering",
-    duration: "2017 - 2021",
+    duration: "August 2017 - July 2021",
     subtitle: "Dr. A.P.J. Abdul Kalam Technical University, India",
     details: [],
     tags: [
