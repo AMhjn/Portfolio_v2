@@ -76,8 +76,8 @@ const { medium, gitConnected, gitRepo } = URLs;
 function populateBio(items, id) {
   const bioTag = document.getElementById(id);
   const p1 = getElement("p", null);
-  p.innerHTML = "Hello, I'm Abhir Mahajan!";
-  bioTag.append(p);
+  p1.innerHTML = "Hello, I'm Abhir Mahajan!";
+  bioTag.append(p1);
   items.forEach((bioItem) => {
     const p = getElement("p", null);
     p.innerHTML = "&square; " + bioItem;
