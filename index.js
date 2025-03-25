@@ -77,7 +77,7 @@ function populateBio(items, id) {
   const bioTag = document.getElementById(id);
   items.forEach((bioItem) => {
     const p = getElement("p", null);
-    p.innerHTML = bioItem;
+    p.innerHTML = "&whitesquare; " + bioItem;
     bioTag.append(p);
   });
 }

@@ -1,15 +1,16 @@
 export const bio = [
   "Hello, I'm Abhir Mahajan!",
-  "<strong>Full Stack Software Engineer</strong> with 2+ years of experience building scalable, high-performance applications that solve real-world problems.",
-  "Skilled in Angular, TypeScript, and performance optimization, I aim to leverage my expertise in delivering innovative solutions that drive measurable business outcomes.",
-  "Passionate about mentoring, teamwork, and continuous improvement in engineering processes.",
+  "<strong>Full Stack Software Engineer</strong> with experience in building scalable, high-performance applications that solve real-world problems.",
+  "",
+  "<strong>Actively Looking for 2025 Full-time Software Engineering Roles</strong>.",
 ];
 
 export const skills = [
-  "JavaScript, TypeScript, Angular, AngularJS, React, HTML5, CSS, Bootstrap, Tailwind CSS",
-  "RxJS, NGXS, NGRX, WebSockets, Stencil, Storybook, Module Federation, Webpack",
-  "Jenkins, JIRA, Git",
-  "Performance Optimization, Responsive Design, Cross-Browser Compatibility",
+  "Java, Python, C, C++, C#, Kotlin, JavaScript, TypeScript, HTML, CSS.",
+  "Spring Boot, Junit, Node.js, Express.js, Angular, React.",
+  "AWS, REST APIs, Kafka, SaaS, Docker, Kubernetes, Microservices, System Design, CI/CD.",
+  "MySQL, SQL Server, MongoDB, PostgreSQL, Redis.",
+  "Git, Android Studio, Jira, Agile Development, Scrum, Jenkins",
 ];
 
 export const experience = [
@@ -28,7 +29,6 @@ export const experience = [
     tags: ["Java", "Spring Boot", "MySQL", "Node.js", " Express.js", "MongoDB", "Angular", "REST APIs", "Microservices"],
     icon: "truck ",
   },
-
   {
     title: "Paytm",
     duration: "February 2021 - July 2021",
@@ -45,18 +45,12 @@ export const experience = [
       "Automation Testing",
       "Mobile App Testing",
     ],
-    icon: "mobile-alt",
-  },
+    icon: "truck",
+  }
   
 ];
 
-export const trekking = [
-  "<strong>Kheerganga Trek</strong>, Himachal Pradesh (9,711 feet)",
-  "<strong>Triund Trek</strong>, Himachal Pradesh (9,350 feet)",
-  "<strong>Kedarkantha Trek</strong>, Uttarakhand (12,500 feet)",
-  "<strong>Jalori Pass Trek</strong>, Himachal Pradesh (10,800 feet)",
-  "<strong>Vaishno Devi Trek</strong>, Jammu & Kashmir (5,200 feet)",
-];
+export const trekking = [];
 
 export const education = [
     {
@@ -90,58 +84,20 @@ export const education = [
 ];
 
 export const footer = [
-  //   {
-  //     label: "Dev Profiles",
-  //     data: [
-  //       {
-  //         text: "Stackoverflow",
-  //         link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-  //       },
-  //       {
-  //         text: "GitHub",
-  //         link: "https://github.com/vinaysomawat",
-  //       },
-  //       {
-  //         text: "LeetCode",
-  //         link: "https://leetcode.com/somawatvinay/",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     label: "Resources",
-  //     data: [
-  //       {
-  //         text: "Enable Dark/Light Mode",
-  //         func: "enableDarkMode()",
-  //       },
-  //       {
-  //         text: "Print this page",
-  //         func: "window.print()",
-  //       },
-  //       {
-  //         text: "Clone this page",
-  //         link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
-  //       },
-  //     ],
-  //   },
   {
     label: "Links",
     data: [
         {
           text: "Linkedin",
-          link: "https://www.linkedin.com/in/vinaysomawat/",
+          link: "https://www.linkedin.com/in/abhirmahajan003/",
         },
-      //   {
-      //     text: "Twitter",
-      //     link: "https://twitter.com/thesigmakid",
-      //   },
-      // {
-      //   text: "Buy me a coffee",
-      //   link: "https://www.buymeacoffee.com/r194dME8y",
-      // },
       {
         text: "Github",
-        link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
+        link: "https://github.com/Amhjn",
+      },
+      {
+        text: "Leetcode",
+        link: "https://leetcode.com/u/AbhirMhjn/",
       },
     ],
   },
